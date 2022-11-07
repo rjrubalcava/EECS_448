@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Joe Rubalcava</h1>
+<p> <b><a href="../../">HOME</a></b></p>
+<p>
+<label for="password">Password: </label>
+<input id="password" type="password" required />
+</p>
+
+<p>
+<label for="validate">Validate Password: </label>
+<input id="validate" type="password" required />
+</p>
+
+<p>
+<input type="submit" value="Submit" onclick="myFunction()"/>
+</p>
+
+<script>
+function myFunction() {
+	password1 = document.getElementById("password").value;
+	password2 = document.getElementById("validate").value;
+
+  if(password1 == password2){
+		alert("Passwords Match");
+	}else{
+		alert("Passwords Do Not Match");
+	}
+}
+</script>
+
+</body>
+</html>

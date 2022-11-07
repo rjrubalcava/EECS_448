@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <link href="myStylesheet.css" 
+        rel="stylesheet" 
+        type="text/css"/> 
+</head>     
+<body>
+
+<h1>Joe Rubalcava</h1>
+<p> <b><a href="../../">HOME</a></b></p>
+
+<p class="mainP" id="mainP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit cursus nunc. Ut elementum euismod augue, ut porttitor mi pellentesque nec. Donec tellus justo, pellentesque sed nunc quis, varius dapibus ex. Nunc vehicula lobortis orci, in rhoncus diam. Vivamus commodo in leo et convallis. Nunc eu eros eget arcu tincidunt aliquet sit amet non nisi. In consequat libero non justo hendrerit consectetur. Etiam at ante id est vulputate gravida. Praesent nunc eros, sodales congue augue sed, vestibulum iaculis massa. Curabitur vitae interdum tortor, ac rhoncus orci. Nam condimentum, enim ut dapibus scelerisque, augue ante eleifend velit, nec accumsan ipsum lacus eget massa. Nunc imperdiet rhoncus pretium. Integer fermentum posuere sollicitudin. Vivamus imperdiet placerat pellentesque. Fusce in sem a metus faucibus pretium.</p>
+
+<div>
+    <p>Border Color Values Using 0 - 255</p>
+    <label for="BorderR">Red Value: </label>
+    <input id="BorderR" type="text" required />
+    <label for="BorderG">Green Value: </label>
+    <input id="BorderG" type="text" required />
+    <label for="BorderB">Blue Value: </label>
+    <input id="BorderB" type="text" required />
+    <label for="BorderWidth">Border Width: </label>
+    <input id="BorderWidth" type="text" required />
+</div>
+<div>
+    <p>Background Color Values Using 0 - 255</p>
+    <label for="BackR">Red Value: </label>
+    <input id="BackR" type="text" required />
+    <label for="BackG">Green Value: </label>
+    <input id="BackG" type="text" required />
+    <label for="BackB">Blue Value: </label>
+    <input id="BackB" type="text" required />
+</div>
+
+<p>
+    <input type="submit" value="Submit" onclick="myFunction()"/>
+</p>
+
+</body>
+
+<script>
+    function myFunction() {
+        borderRedValue = document.getElementById("BorderR").value;
+        borderGreenValue = document.getElementById("BorderG").value;
+        borderBlueValue = document.getElementById("BorderB").value;
+        borderWidthVal = document.getElementById("BorderWidth").value;
+
+        backgroundRedValue = document.getElementById("BackR").value;
+        backgroundGreenValue = document.getElementById("BackG").value;
+        backgroundBlueValue = document.getElementById("BackB").value;
+
+        document.getElementById(mainP).style.borderColor = rgb(borderRedValue, borderGreenValue, borderBlueValue);
+        document.getElementById(mainP).style.borderWidth = borderWidthVal;
+
+        document.getElementById(mainP).style.backgroundColor = rgb(backgroundRedValue, backgroundGreenValue, backgroundBlueValue);
+    }
+    </script>
+
+</html>
