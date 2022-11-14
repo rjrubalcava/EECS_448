@@ -1,0 +1,51 @@
+body
+{
+    background-color: #CDB599FF;
+}
+h1
+{
+    font-size: 36;
+}
+
+h2
+{
+    font-size: 32;
+}
+
+img
+{
+    float: right;
+}
+
+.customTable {
+    border-radius: 25px;
+    border-spacing: 15px;
+    margin: 50px 0;
+    font-size: 24px;
+    font-family: "Times New Roman", Times, serif;
+    min-width: 500px;
+    min-height: 250px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    background-color: maroon;
+    color: white;
+}
+
+.description{
+  font-size: 24px;
+  color: #1c5967;
+  font-weight: bolder;
+}
+
+.customTable thead tr {
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.customTable thead td {
+    background-color: green;
+    padding: 10px;
+    border-bottom: 5px black;
+    border-radius: 5px;
+    margin: 50px 0;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type = "text/javascript" src="formChecker.js"></script>  
+    <link href="style.css"
+        rel="stylesheet"
+        type="text/css"/>
+</head>
+<body>
+    <div>
+        <!--Header-->
+        <h1>Joe Rubalcava</h1>
+        <b><a href="../../">HOME</a></b>
+    </div>
+    <div>
+        <!--Image of an apple-->
+        <div>
+            <img src="apple.png" alt="Apple" style="width: 500px;">
+        </div>
+        <!--Store Name & Description-->
+        <h2>Joe's Fresh Apples Online</h2>
+        <div>
+            <div>
+                <p class = "description">&emsp;&emsp;Here at Joe's Fresh Apples, we serve up the most delicious Fuji, 
+                    Golden Delicious, and Honeycrisp Apples either side of the Mississipi! Go ahead and use
+                    the form below to order you up some scrumptious apples. If you aren't satisfied with the Apples you get,
+                    you'll get your money back. And THAT is a GENUWINE JOE GUARENTEE!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <form name="purchaseForm" action="customerBackend.php" onsubmit="return validateForm()" method="post">
+
+            <div>
+                <h3>Kindly Enter Ya Information</h3>
+                <label for="emailAddy">Email Address:</label>
+                <input name="emailAddy" type="text" id="emailAddy">
+                <br>
+                <label for="userPassword">Password:</label>
+                <input name="userPassword" type="text" id="userPassword">
+            </div>
+            <div>
+                <h3>How Many of them Apples doya want?</h3>
+                <label for="numOfFuji">Number of Fuji Apple's @ $1.50:</label>
+                <input type="number" id="numOfFuji" name="numOfFuji" min="0">
+                <br>
+                <label for="numOfGoldenDelicious">Number of Golden Delicious Apple's @ $0.75:</label>
+                <input type="number" id="numOfGoldenDelicious" name="numOfGoldenDelicious" min="0">
+                <br>
+                <label for="numOfHoneycrisp">Number of Honeycrisp Apple's @ $2.50:</label>
+                <input type="number" id="numOfHoneycrisp" name="numOfHoneycrisp" min="0">
+                <br>
+            </div>
+
+            <div>
+                <h3>When do you want that amigo?</h3>
+                <input type="radio" id="freeSevenDay" name="shippingSpeed" value="freeSevenDay">
+                <label for="freeSevenDay">FREAKY FREE 7-Day Delivery!</label><br>
+
+                <input type="radio" id="fiveDollarMakeYouHollerThreeDay" name="shippingSpeed" value="fiveDollarMakeYouHollerThreeDay">
+                <label for="fiveDollarMakeYouHollerThreeDay">FIVE DOLLAR MAKE YOU HOLLER! 3 Day Shipping $5</label><br>
+
+                <input type="radio" id="fiftyDollarOvernight" name="shippingSpeed" value="fiftyDollarOvernight">
+                <label for="fiftyDollarOvernight">Wicked Fast Overnight Delivery: $50</label>
+                <br>
+                <br>
+            </div>
+
+            <div>
+                <input type="reset" value="I Done Made A Mistake: Reset">
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
+</body>
+</html>

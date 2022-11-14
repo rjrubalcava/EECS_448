@@ -1,0 +1,40 @@
+h1 
+{ 
+    background-color: #5B84B1FF; 
+} 
+h2 
+{ 
+    color: #5F4B8BFF;
+    background-color: #5B84B1FF;
+    background-image: url(John.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 50%;   
+}
+body 
+{ 
+    background-color: #FC766AFF;
+    color: whitesmoke;
+    font-family: "Copperplate", Fantasy;
+    font-size: 20pt;
+}
+a 
+{  
+    color: #5F4B8BFF; 
+    background-color: #CDB599FF;    
+} 
+ 
+a:hover 
+{ 
+    background-color: #5F4B8BFF; 
+    color: #CDB599FF; 
+} 
+p 
+{ 
+ 
+} 
+ 
+p.bright 
+{ 
+    background-color: #CDB599FF; 
+} 
